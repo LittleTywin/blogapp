@@ -1,0 +1,6 @@
+db.sqlite3
+**/config.json
+*.code-workspace
+**/__pycache__
+/media
+*.jpeg

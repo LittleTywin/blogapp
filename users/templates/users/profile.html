@@ -1,0 +1,15 @@
+{%extends 'blog/base.html'%}
+{%load crispy_forms_tags%}
+{%block content%}
+<h2>la profile de {{user.username}}</h2>
+<form method="post" enctype="multipart/form-data">
+  <fieldset class="form-group">
+  {%csrf_token%}
+  {{u_form|crispy}}
+  {{p_form|crispy}}
+  </fieldset>
+  <div class="form-group">
+    <input class="btn btn-primary" type="submit" value="Update">
+  </div>
+</form>
+{%endblock content%}
