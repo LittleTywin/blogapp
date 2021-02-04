@@ -19,6 +19,7 @@ class UserRegisterForm(UserCreationForm):
 class UserUpdateForm(forms.ModelForm):
 
     email = forms.EmailField(required=False)
+    username = forms.CharField()
 
     class Meta:
         model=User
